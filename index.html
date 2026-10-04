@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mac Pang | Supply Chain & Procurement</title>
+  <meta name="description" content="Portfolio of Mac Pang — supply chain and capital procurement, sourcing analysis, and procurement automation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">Mac Pang</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- 1. PERSONAL STATEMENT -->
+    <section id="about" class="hero">
+      <div class="container">
+        <p class="eyebrow">Supply Chain Management · Rutgers Business School</p>
+        <h1>Mac Pang</h1>
+        <p class="statement">
+          I am a supply chain and procurement professional who turns complex capital purchases into
+          data-driven sourcing decisions — from supplier cost-driver analysis to automated quoting systems.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="card">
+            <h3>Strategic Sourcing</h3>
+            <ul class="tags">
+              <li>RFP / RFQ / RFI management</li>
+              <li>Technical Bid Evaluation (TBE)</li>
+              <li>Should-cost analysis</li>
+              <li>Sub-tier supplier cost mapping</li>
+              <li>Bid tabulation</li>
+              <li>Vendor selection</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Contracts & Cost Management</h3>
+            <ul class="tags">
+              <li>Contract negotiation</li>
+              <li>Service &amp; staffing agreements</li>
+              <li>CapEx / OpEx tracking</li>
+              <li>Cost savings reporting</li>
+              <li>SOP development</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Industry Knowledge</h3>
+            <ul class="tags">
+              <li>GMP biomanufacturing</li>
+              <li>Capital equipment</li>
+              <li>Clean utilities &amp; HVAC</li>
+              <li>User Requirement Specs (URS)</li>
+              <li>Industrial laser equipment</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Tools &amp; Technology</h3>
+            <ul class="tags">
+              <li>SAP Ariba</li>
+              <li>Microsoft Excel (advanced)</li>
+              <li>Zoho CRM</li>
+              <li>n8n workflow automation</li>
+              <li>AI-assisted workflows</li>
+              <li>GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+
+          <article class="card project">
+            <p class="project-tag">Procurement Automation</p>
+            <h3>AI-Powered Quoting Engine</h3>
+            <p>
+              Built and led an automated RFQ-to-quote system for an industrial laser equipment company.
+              Dealer requests are turned into accurate, professional quotes in Zoho CRM, then converted
+              to PDF and emailed with brochures and layouts through an n8n workflow — cutting manual
+              quoting time and standardizing pricing rules.
+            </p>
+            <p class="stack">Zoho CRM · n8n · Google Drive · AI</p>
+            <a href="#case-quoting" class="link">Read case summary →</a>
+          </article>
+
+          <article class="card project">
+            <p class="project-tag">Capital Procurement</p>
+            <h3>Weighted Technical Bid Evaluation Scorecards</h3>
+            <p>
+              Designed weighted Excel scorecards for a biomanufacturing facility build-out, including a
+              37-criteria evaluation for autoclaves and washers and a clean-utilities scorecard
+              (WFI, purified water, pure steam). Wrote plain-language criteria guides so non-technical
+              stakeholders could take part in vendor selection.
+            </p>
+            <p class="stack">Excel · TBE · GMP Equipment</p>
+            <a href="#case-tbe" class="link">Read case summary →</a>
+          </article>
+
+          <article class="card project">
+            <p class="project-tag">Systems Selection</p>
+            <h3>Electronic Lab Notebook Vendor Selection</h3>
+            <p>
+              Led a software selection process across four ELN platforms. Built a 63-requirement User
+              Requirement Specification refined through end-user review, set a standard requirement
+              status taxonomy, and prepared vendor-neutral Q&amp;A packages for distribution.
+            </p>
+            <p class="stack">URS · RFI · Vendor Evaluation</p>
+            <a href="#case-eln" class="link">Read case summary →</a>
+          </article>
+
+          <article class="card project">
+            <p class="project-tag">Academic Research</p>
+            <h3>New Jersey Oyster Supply Chain Study</h3>
+            <p>
+              Team semester project researching New Jersey's oyster production industry end to end —
+              industry background, current-state supply chain mapping, and sustainability,
+              climate-risk, and circular-economy opportunities.
+            </p>
+            <p class="stack">Supply Chain Mapping · Sustainability · Research</p>
+            <a href="#case-oyster" class="link">Read case summary →</a>
+          </article>
+
+        </div>
+
+        <!-- Case summaries (keep every project link working without exposing confidential files) -->
+        <div class="cases">
+          <details id="case-quoting" class="case">
+            <summary>AI-Powered Quoting Engine — case summary</summary>
+            <ul>
+              <li><strong>Problem:</strong> Dealer RFQs arrived incomplete and inconsistent, making quotes slow and error-prone.</li>
+              <li><strong>Approach:</strong> Codified hard quoting rules (tax, trade-ins, configuration checks), connected CRM product lookup, and automated PDF delivery.</li>
+              <li><strong>Result:</strong> A live system producing production-quality quotes for internal staff and external dealer reps.</li>
+            </ul>
+          </details>
+          <details id="case-tbe" class="case">
+            <summary>Weighted TBE Scorecards — case summary</summary>
+            <ul>
+              <li><strong>Problem:</strong> Engineering needed a fair, repeatable way to compare competing capital-equipment bids.</li>
+              <li><strong>Approach:</strong> Weighted criteria across technical, compliance, service and commercial factors, with plain-language definitions.</li>
+              <li><strong>Result:</strong> Transparent vendor comparisons that cross-functional teams could review and sign off on.</li>
+            </ul>
+          </details>
+          <details id="case-eln" class="case">
+            <summary>ELN Vendor Selection — case summary</summary>
+            <ul>
+              <li><strong>Problem:</strong> R&amp;D needed a compliant electronic lab notebook that matched real user workflows.</li>
+              <li><strong>Approach:</strong> Gathered and refined 63 requirements with end users; tracked open RFI questions per vendor.</li>
+              <li><strong>Result:</strong> A structured, auditable shortlist ready for QA/IT review and final selection.</li>
+            </ul>
+          </details>
+          <details id="case-oyster" class="case">
+            <summary>NJ Oyster Supply Chain Study — case summary</summary>
+            <ul>
+              <li><strong>Problem:</strong> Understand how New Jersey oysters move from farm to market and where the risks are.</li>
+              <li><strong>Approach:</strong> Project charter, research plan, industry background and current-state analysis, then sustainability and climate-risk review.</li>
+              <li><strong>Result:</strong> In progress — team report and recommendations due at semester end.</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact">
+        <h2>Contact</h2>
+        <p>Open to sourcing analyst, category analyst, and procurement roles.</p>
+        <div class="hero-actions">
+          <a href="mailto:linxuan.pang@gmail.com" class="btn btn-primary">Email Me</a>
+          <a href="https://github.com/lp767-mp" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 Mac Pang · Built with HTML &amp; CSS, hosted on GitHub Pages</div>
+  </footer>
+
+  <script>
+    // Open a case summary when its "Read case summary" link is clicked
+    function openCase() {
+      var el = location.hash && document.querySelector(location.hash);
+      if (el && el.tagName === "DETAILS") el.open = true;
+    }
+    window.addEventListener("hashchange", openCase);
+    openCase();
+  </script>
+
+</body>
+</html>

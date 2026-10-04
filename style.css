@@ -1,0 +1,100 @@
+:root {
+  --bg: #ffffff;
+  --bg-alt: #f5f7fa;
+  --text: #1a2233;
+  --muted: #5b6577;
+  --accent: #0f5fd7;
+  --accent-soft: #e8f0fd;
+  --border: #e3e7ee;
+  --radius: 12px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.container { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+/* Nav */
+.nav {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner { display: flex; justify-content: space-between; align-items: center; height: 60px; }
+.logo { font-weight: 700; color: var(--text); text-decoration: none; }
+.nav nav a {
+  margin-left: 22px; color: var(--muted); text-decoration: none; font-size: 0.95rem; font-weight: 500;
+}
+.nav nav a:hover { color: var(--accent); }
+
+/* Hero / statement */
+.hero { padding: 96px 0 80px; background: linear-gradient(180deg, var(--accent-soft), var(--bg)); }
+.eyebrow { color: var(--accent); font-weight: 600; font-size: 0.9rem; letter-spacing: 0.02em; }
+.hero h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); margin: 8px 0 16px; letter-spacing: -0.02em; }
+.statement { font-size: clamp(1.1rem, 2.4vw, 1.35rem); max-width: 720px; color: var(--muted); }
+.hero-actions { margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap; }
+
+.btn {
+  display: inline-block; padding: 11px 22px; border-radius: 999px;
+  text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: 0.15s;
+}
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: #0b4bab; }
+.btn-ghost { border: 1px solid var(--border); color: var(--text); background: #fff; }
+.btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Sections */
+.section { padding: 80px 0; }
+.section-alt { background: var(--bg-alt); }
+h2 { font-size: 1.9rem; margin-bottom: 32px; letter-spacing: -0.01em; }
+h3 { font-size: 1.1rem; margin-bottom: 12px; }
+
+.card {
+  background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px;
+}
+
+/* Skills */
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.tags { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.tags li {
+  background: var(--accent-soft); color: var(--accent);
+  padding: 5px 12px; border-radius: 999px; font-size: 0.85rem; font-weight: 500;
+}
+
+/* Projects */
+.projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+@media (max-width: 720px) { .projects-grid { grid-template-columns: 1fr; } }
+.project { display: flex; flex-direction: column; transition: 0.15s; }
+.project:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(15, 35, 70, 0.08); }
+.project p { color: var(--muted); font-size: 0.95rem; }
+.project-tag { color: var(--accent) !important; font-weight: 600; font-size: 0.8rem !important;
+  text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; }
+.stack { margin-top: 14px; font-size: 0.85rem !important; font-weight: 500; }
+.link { margin-top: auto; padding-top: 16px; color: var(--accent); font-weight: 600; text-decoration: none; }
+.link:hover { text-decoration: underline; }
+
+.cases { margin-top: 36px; display: grid; gap: 12px; }
+.case { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 20px; }
+.case summary { cursor: pointer; font-weight: 600; }
+.case ul { margin: 12px 0 4px 20px; color: var(--muted); }
+.case li { margin-bottom: 6px; }
+.case:target { border-color: var(--accent); }
+
+/* Contact & footer */
+.contact p { color: var(--muted); }
+.footer { border-top: 1px solid var(--border); padding: 24px 0; color: var(--muted); font-size: 0.85rem; text-align: center; }
+
+@media (max-width: 600px) {
+  .nav nav a { margin-left: 14px; font-size: 0.85rem; }
+  .hero { padding: 64px 0 56px; }
+  .section { padding: 56px 0; }
+}
